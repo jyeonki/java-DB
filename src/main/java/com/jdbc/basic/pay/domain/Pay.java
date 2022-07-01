@@ -11,12 +11,12 @@ import lombok.*;
 // 데이터베이스 pay 테이블의 행데이터를 저장할 객체
 public class Pay {
 
-    private int empNum;
-    private String empName;
-    private String empRank;
-    private int basePay;
-    private double taxRate;
-    private int netSalary;
+    private String empNum; // 사원번호
+    private String empName; // 사원명
+    private String empRank; // 직급
+    private int basePay; // 기본급
+    private double taxRate; // 세율
+    private int netSalary; // 순급여
 
 
     // 직급별 기본급, 세율 설정 메서드

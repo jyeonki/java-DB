@@ -10,17 +10,18 @@ public interface PayRepository {
     boolean save(Pay pay);
 
     // 사원 급여 정보 삭제
-    boolean remove(int empNum);
+    boolean remove(String empNum);
 
     // 사원 급여 정보 수정 (직급)
     boolean modify(Pay pay);
 
     // 전체 사원 급여 조회
-    Map<Integer, Pay> findAll();
+    Map<String, Pay> findAll();
 
     // 개별 급여 조회
-    Pay findOne(int empNum);
+    Pay findOne(String empNum);
 
     // 전체 사원들의 월급 평균 조회
-    double getEmpSalaryAverage();
+    double getEmpPayAverage();
+
 }
