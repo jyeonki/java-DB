@@ -147,7 +147,7 @@ public class PayMenu {
         if (payController.hasEmp(empNum))
         {
             String oldRank = payController.findOneEmpPay(empNum).getEmpRank();
-            System.out.println("# 해당 사원의 직급을 수정하세요 [사원, 대리, 과장, 부장]");
+            System.out.println("\n# 해당 사원의 직급을 수정하세요 [사원, 대리, 과장, 부장]");
             String newRank = inputStr("- 새로운 직급 (현재 직급: " + oldRank + "): ");
 
             if (newRank.equals("사원") || newRank.equals("대리") || newRank.equals("과장") || newRank.equals("부장"))
@@ -155,11 +155,11 @@ public class PayMenu {
                 boolean flag = payController.updateEmpPay(empNum, newRank);
                 if (flag)
                 {
-                    System.out.println("# 수정이 완료되었습니다.");
+                    System.out.println("\n# 수정이 완료되었습니다.");
 
                 } else
                 {
-                    System.out.println("# 수정이 실패했습니다.");
+                    System.out.println("\n# 수정이 실패했습니다.");
                 }
             } else
             {
