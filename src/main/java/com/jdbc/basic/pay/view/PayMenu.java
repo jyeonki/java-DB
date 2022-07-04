@@ -2,7 +2,6 @@ package com.jdbc.basic.pay.view;
 
 import com.jdbc.basic.pay.controller.PayController;
 import com.jdbc.basic.pay.domain.Pay;
-import com.jdbc.basic.score.domain.Score;
 
 import java.util.List;
 import java.util.Scanner;
